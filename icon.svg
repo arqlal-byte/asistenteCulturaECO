@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10d7df"/><stop offset="1" stop-color="#006277"/></linearGradient></defs>
+<rect width="512" height="512" rx="108" fill="#fff"/>
+<path d="M0 250 Q120 205 240 275 T512 220 V512 H0Z" fill="url(#g)"/>
+<circle cx="256" cy="290" r="125" fill="#fff"/>
+<rect x="172" y="230" width="168" height="110" rx="45" fill="#003e50"/>
+<circle cx="220" cy="282" r="12" fill="#fff"/><circle cx="292" cy="282" r="12" fill="#fff"/>
+<path d="M204 315 Q256 360 308 315" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+<rect x="244" y="180" width="24" height="55" rx="12" fill="#006277"/><circle cx="256" cy="170" r="18" fill="#00aabd"/>
+<path d="M330 155 h92 a28 28 0 0 1 28 28 v35 a28 28 0 0 1-28 28 h-38 l-30 25 5-25 h-29 a28 28 0 0 1-28-28 v-35 a28 28 0 0 1 28-28Z" fill="#00b8cc"/>
+<circle cx="352" cy="200" r="7" fill="#fff"/><circle cx="378" cy="200" r="7" fill="#fff"/><circle cx="404" cy="200" r="7" fill="#fff"/>
+<text x="256" y="430" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="42" fill="#fff">ECO IA</text>
+</svg>
