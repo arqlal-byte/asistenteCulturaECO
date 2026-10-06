@@ -1,0 +1,18 @@
+{
+  "name": "Asistente Cultural ECO IA",
+  "short_name": "Cultura ECO IA",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "description": "Acceso al Asistente Cultural ECO IA de Embotelladora de Colima.",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
