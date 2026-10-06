@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Asistente Cultural ECO IA</title>
+<link rel="manifest" href="./manifest.json">
+<link rel="apple-touch-icon" href="./icon.svg">
+<style>
+html,body{margin:0;width:100%;height:100%;background:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body{display:grid;place-items:center}
+main{text-align:center;padding:32px;color:#172033}
+.logo{width:min(72vw,360px);height:auto;border-radius:24%}
+h1{font-size:clamp(32px,8vw,56px);margin:24px 0 10px}
+p{font-size:clamp(20px,5vw,30px);margin:0 0 28px}
+a{display:inline-block;background:#007f91;color:#fff;text-decoration:none;padding:18px 28px;border-radius:18px;font-size:24px;font-weight:700}
+</style>
+</head>
+<body>
+<main>
+<img class="logo" src="./icon.svg" alt="Asistente Cultural ECO IA">
+<h1>Asistente Cultural ECO IA</h1>
+<p>Abriendo el asistente…</p>
+<a href="https://script.google.com/macros/s/AKfycby7d3-yJmbwhtV_25Z-7WJjqmxAU_zfSEoQZ8UpD4Mi83uIccZF9UDV6VQomGeHPudh/exec">Abrir asistente</a>
+</main>
+<script>
+const target="https://script.google.com/macros/s/AKfycby7d3-yJmbwhtV_25Z-7WJjqmxAU_zfSEoQZ8UpD4Mi83uIccZF9UDV6VQomGeHPudh/exec";
+setTimeout(()=>location.replace(target),350);
+if("serviceWorker" in navigator){addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}
+</script>
+</body></html>
