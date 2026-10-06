@@ -23,10 +23,23 @@ a{display:inline-block;background:#007f91;color:#fff;text-decoration:none;paddin
 <h1>Asistente Cultural ECO IA</h1>
 <p>Abriendo el asistente…</p>
 <a href="https://script.google.com/macros/s/AKfycby7d3-yJmbwhtV_25Z-7WJjqmxAU_zfSEoQZ8UpD4Mi83uIccZF9UDV6VQomGeHPudh/exec">Abrir asistente</a>
+<section id="installHelp" style="margin:34px auto 0;max-width:720px;text-align:left;background:#f3f5f7;border-radius:24px;padding:24px 28px">
+<strong style="font-size:26px">Instálala en tu celular</strong>
+<div id="iosHelp" style="font-size:22px;line-height:1.45;margin-top:12px">En iPhone: abre esta página en Safari, toca <b>Compartir</b> y selecciona <b>Agregar a pantalla de inicio</b>. Después toca <b>Agregar</b>.</div>
+<div id="androidHelp" style="font-size:22px;line-height:1.45;margin-top:12px">En Android: abre esta página en Chrome, toca el menú <b>⋮</b> y selecciona <b>Instalar aplicación</b> o <b>Agregar a pantalla principal</b>.</div>
+</section>
 </main>
 <script>
 const target="https://script.google.com/macros/s/AKfycby7d3-yJmbwhtV_25Z-7WJjqmxAU_zfSEoQZ8UpD4Mi83uIccZF9UDV6VQomGeHPudh/exec";
-setTimeout(()=>location.replace(target),350);
+const standalone=window.matchMedia("(display-mode: standalone)").matches||window.navigator.standalone===true;
+if(standalone){setTimeout(()=>location.replace(target),350);}
+else{
+  document.querySelector("p").textContent="Puedes instalar el acceso en tu pantalla de inicio o abrir el asistente directamente.";
+  const isiOS=/iPhone|iPad|iPod/i.test(navigator.userAgent);
+  const isAndroid=/Android/i.test(navigator.userAgent);
+  if(isiOS) document.getElementById("androidHelp").style.display="none";
+  if(isAndroid) document.getElementById("iosHelp").style.display="none";
+}
 if("serviceWorker" in navigator){addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}
 </script>
 </body></html>
